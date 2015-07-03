@@ -62,6 +62,7 @@ Executable migrate
 
 test-suite tests
     main-is:                Main.hs
+    buildable:              False
     hs-source-dirs:         test
     ghc-options:            -Wall -fwarn-tabs -fwarn-incomplete-uni-patterns
     default-extensions:     OverloadedStrings
