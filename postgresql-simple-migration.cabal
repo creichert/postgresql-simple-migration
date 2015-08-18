@@ -66,8 +66,6 @@ test-suite tests
     main-is:                Main.hs
     buildable:              False
     hs-source-dirs:         test
-    other-modules:          Database.PostgreSQL.Simple.Migration
-                            Database.PostgreSQL.Simple.Util
     ghc-options:            -Wall -fwarn-tabs -fwarn-incomplete-uni-patterns
     default-extensions:     OverloadedStrings
     default-language:       Haskell2010
