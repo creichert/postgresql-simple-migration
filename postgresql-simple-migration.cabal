@@ -46,21 +46,14 @@ Library
                             time                        >= 1.4      && < 1.6
 
 Executable migrate
-    main-is:                Main.hs
-    hs-source-dirs:         src
-    other-modules:          Database.PostgreSQL.Simple.Migration
-                            Database.PostgreSQL.Simple.Util
+    main-is:                src/Main.hs
+    hs-source-dirs:         ""
     ghc-options:            -Wall -fwarn-tabs -fwarn-incomplete-uni-patterns
     default-extensions:     OverloadedStrings
     default-language:       Haskell2010
     build-depends:          base                        >= 4.6      && < 5.0,
-                            base64-bytestring           >= 1.0      && < 1.1,
-                            bytestring                  >= 0.10     && < 0.11,
-                            cryptohash                  >= 0.11     && < 0.12,
-                            directory                   >= 1.2      && < 1.3,
-                            postgresql-simple           >= 0.4      && < 0.5,
-                            time                        >= 1.4      && < 1.6,
                             text                        >= 1.2      && < 1.3
+                            postgresql-simple-migration
 
 test-suite tests
     main-is:                Main.hs
@@ -74,4 +67,4 @@ test-suite tests
                             bytestring                  >= 0.10     && < 0.11,
                             postgresql-simple           >= 0.4      && < 0.5,
                             hspec                       >= 1.11,
-                            postgresql-simple-migration >= 0.1      && < 0.2
+                            postgresql-simple-migration
